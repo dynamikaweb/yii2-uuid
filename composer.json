@@ -1,0 +1,31 @@
+{
+    "name": "dynamikaweb/yii2-uuid",
+    "description": "Guide and package for using UUID in yii2 projects",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "uuid"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "RodrigoDornelles",
+            "email": "rodrigo@dornelles.me",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "http://github.com/dynamikaweb/yii2-uuid/issues",
+        "source": "http://github.com/dynamikaweb/yii2-uuid"
+    },
+    "require": {
+        "php": ">=7.4.0",
+        "macgyer/yii2-uuid-validator": "*",
+        "yiisoft/yii2": "*",
+        "ramsey/uuid": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false,
+    "autoload": {
+        "psr-4": {
+            "dynamikaweb\\uuid\\": "src"
+        }
+    }
+}
