@@ -33,6 +33,7 @@ to the `require` section of your `composer.json` file.
 public function safeUp()
 {
     $this->addColumn('sometable', 'uuid', 'uuid' => $this->binary(16)->unique()->notNull());
+    $this->createIndex('sometable_uuid_idx', 'sometable', 'uuid');
     ...
 }
 ```
