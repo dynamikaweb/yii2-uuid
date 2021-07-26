@@ -43,6 +43,7 @@ public function safeUp()
 ### Validate ###
 
 ```PHP
+use dynamikaweb\uuid\UuidValidator;
 public function rules()
 {
     return [
@@ -55,6 +56,7 @@ public function rules()
 ### Generate and save ###
 
 ```PHP
+use dynamikaweb\uuid\Uuid;
 public function beforeSave($insert)
 {
     if (!parent::beforeSave($insert)) {
@@ -118,6 +120,8 @@ protected function findModel($uuid)
 ### Form ##
 
 ```PHP
+use dynamikaweb\uuid\UuidMask;
+
 echo UuidMask::widget([
     'name' => 'uuid'
 ]);
