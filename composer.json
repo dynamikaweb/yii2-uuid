@@ -17,7 +17,6 @@
     },
     "require": {
         "php": ">=7.4.0",
-        "macgyer/yii2-uuid-validator": "*",
         "yiisoft/yii2": "*",
         "ramsey/uuid": "*"
     },
